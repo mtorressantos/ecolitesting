@@ -1,0 +1,42 @@
+/* ============================================================================
+   HB - HB WP Admin Page custom styles.
+   Version: 5.9.8
+   ========================================================================= */
+/* ============================================================================
+   WP MEDIA
+   ========================================================================= */
+.media-router a:focus, .media-router a:hover {
+	text-decoration: none;
+}
+.media-toolbar-secondary > select {
+	min-width: 100px;
+}
+.media-sidebar p {
+	margin: 1em 0px;
+}
+
+/* ============================================================================
+   CUSTOM FIX - WP Admin form default style.
+   ========================================================================= */
+.react-tabs [role=tab],
+.styles__shortcut-wrapper li {
+	margin-bottom: 0px;
+}
+.app__options-area input[type=text],
+.app__options-area textarea,
+.app__options-area input[type=radio] {
+    border: 1px solid #363636;
+    background-color: #3d3d3d;
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+.radio-button__radion-button {
+	min-height: 26px;
+}
+p {
+	font-size: inherit;
+}

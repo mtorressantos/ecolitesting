@@ -1,0 +1,1 @@
+[11-Dec-2018 19:33:15 UTC] PHP Fatal error:  Call to a member function have_posts() on null in /home/jose2creativa/public_html/laboratoriesforsale/wp-content/themes/jupiter-child/functions.php on line 90

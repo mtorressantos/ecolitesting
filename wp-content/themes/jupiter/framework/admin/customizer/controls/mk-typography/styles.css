@@ -1,0 +1,23 @@
+.mk-control-typography .mk-row + .mk-row {
+	margin-top: 10px;
+}
+.mk-typography-item-color .mk-element .alpha-color-picker-wrap{
+	margin-left: 38px;
+}
+
+.mk-typography-item-font-style .mk-element-radio {
+	margin-top: 5px;
+	margin-left: 16px;
+}
+.mk-typography-item-font-style .mk-element-radio .mk-radio-item:hover{
+	cursor: pointer;
+}
+.mk-typography-item-font-family .mk-input-group-icon,
+.mk-typography-item-font-size .mk-input-group-icon,
+.mk-typography-item-font-weight .mk-input-group-icon {
+	margin-top: 5px;
+}
+
+.mk-typography-item .mk-input-group-icon img {
+	width: 22px;
+}

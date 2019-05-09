@@ -1,0 +1,90 @@
+.mk-element-select {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.mk-element-select .selectize-control {
+	width: 100%;
+}
+
+.mk-element-select .selectize-control .selectize-input {
+	height: 28px;
+	font-size: 12px;
+	border: 1px solid #757575;
+	background-color: #757575;
+	padding: 4px 10px;
+	color: #fff;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mk-element-select .selectize-control .selectize-input > .item {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 144px;
+}
+
+.mk-element-select .selectize-control.single .selectize-input.input-active,
+.mk-element-select .selectize-control.single .selectize-input.input-active input {
+	background-color: #757575;
+	color: #fff;
+	cursor: pointer;
+}
+
+.mk-element-select .selectize-control.single .selectize-input::after {
+	border-color: #fff transparent transparent transparent;
+	right: 11px;
+	margin-top: -2px;
+}
+
+.mk-element-select .selectize-control.single .selectize-input.dropdown-active:after {
+	margin-top: -4px;
+	border-width: 0 5px 5px 5px;
+	border-color: transparent transparent #fff transparent;
+}
+
+.mk-element-select .selectize-control .selectize-input::before {
+	display: none;
+}
+
+.mk-element-select .selectize-dropdown [data-selectable] .highlight {
+	background-color: #757575;
+	color: #fff;
+}
+
+.mk-element-select .selectize-dropdown {
+	border-width: 0;
+	border-top: 1px solid #404040;
+	background: #757575;
+	color: #fff;
+}
+
+.mk-element-select .selectize-dropdown .active {
+	background-color: #668896;
+	color: #fff;
+}
+
+.mk-element-select .selectize-dropdown .mk-current {
+	background-color: #37c4ff;
+}
+
+.mk-element-select.mk-element-has-icon .selectize-control {
+	margin-left: 28px;
+	margin-top: 2px;
+}
+
+.mk-element-select .mk-input-group-icon {
+	position: absolute;
+	top: 5.5px;
+	left: 0;
+	color: #999;
+}
+
+.mk-element-select .mk-input-group-text {
+	padding-right: 6px;
+	line-height: 1.7rem;
+	white-space: nowrap;
+}

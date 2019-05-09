@@ -1,0 +1,24 @@
+/* ============================================================================
+   LOGO
+   ========================================================================= */
+.mkhb-logo-el__link,
+.mkhb-logo-el__image {
+	display: inline-block;
+}
+
+/* ============================================================================
+   LOGO - Default values.
+   ========================================================================= */
+.mkhb-logo-el {
+	display: block;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: auto;
+}
+.mkhb-logo-el__image {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}

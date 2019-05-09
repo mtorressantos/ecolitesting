@@ -1,0 +1,188 @@
+/* ============================================================================
+   SEARCH
+   ========================================================================= */
+.mkhb-search-el {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+/* ============================================================================
+   SEARCH
+   ========================================================================= */
+.mkhb-search-el {
+	display: block;
+	position: relative;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+/* ============================================================================
+   SEARCH - ICON
+   ========================================================================= */
+.mkhb-search-el__icon-wrapper {
+	display: block;
+	line-height: 1;
+	position: relative;
+	vertical-align: middle;
+}
+.mkhb-search-el__container {
+	color: #444;
+	display: inline-block;
+	font-size: 16px;
+}
+.mkhb-search-el__icon-wrapper svg,
+.mkhb-search-el__icon-svg {
+	fill: currentColor;
+}
+
+/* ============================================================================
+   SEARCH - OVERLAY
+   ========================================================================= */
+.mkhb-search-el__overlay {
+	background-color: rgba(0,0,0,.94);
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	position: fixed;
+	text-align: center;
+	visibility: hidden;
+	z-index: 999;
+	transition: all ease-in-out .25s;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.mkhb-search-el__overlay:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	margin-right: -.25em;
+	vertical-align: middle;
+}
+.mkhb-search-el__overlay--show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/**
+ * SEARCH > OVERLAY > CLOSE
+ */
+.mkhb-search-el__overlay__close {
+	height: 26px;
+	right: 50px;
+	top: 70px;
+	position: absolute;
+	transition: -webkit-transform ease-out .2s;
+	transition: transform ease-out .2s;
+	transition: transform ease-out .2s,-webkit-transform ease-out .2s;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+.mkhb-search-el__overlay__close:hover {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.mkhb-search-el__overlay__close svg {
+	fill: #fff;
+	height: 26px;
+}
+
+/**
+ * SEARCH > OVERLAY > WRAPPER
+ */
+.mkhb-search-el__overlay__wrapper {
+	display: inline-block;
+	font-size: 18px;
+	max-width: 1000px;
+	text-align: center;
+	opacity: 0;
+	vertical-align: middle;
+	visibility: hidden;
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	transform: scale(.9);
+	ms-transform: scale(.9);
+	transition: all ease-in-out .3s;
+}
+.mkhb-search-el__overlay--show .mkhb-search-el__overlay__wrapper {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	ms-transform: scale(1);
+	transform: scale(1);
+}
+.mkhb-search-el__overlay__wrapper p {
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+/**
+ * SEARCH > OVERLAY > FORM
+ */
+#mkhb-search-el__overlay__search-form {
+	position: relative;
+}
+#mkhb-search-el__overlay__search-input {
+	color: #fff;
+	background-color: transparent;
+	box-shadow: 0 3px 0 0 rgba(255,255,255,.1);
+	border: 0;
+	font-size: 35px;
+	outline: none;
+	padding: 20px;
+	text-align: center;
+	transition: all .3s ease-out;
+	width: 800px;
+}
+.mkhb-search-el__overlay__search-icon {
+	color: #fff;
+	color: rgba(255,255,255,.2);
+	font-size: 25px;
+	position: absolute;
+	right: 15px;
+	top: 30px;
+	transition: all .2s ease-out;
+}
+
+@media (max-width: 1024px) {
+	#mkhb-search-el__overlay__search-input {
+		max-width: 100%;
+	}
+	.mkhb-search-el__overlay__wrapper {
+		max-width: 80%;
+	}
+}
+
+/* Set the position based on WordPress admin bar on mobile resolution. */
+@media (max-width: 782px) {
+	.mkhb-search-el__overlay__close {
+		right: 24px;
+	}
+}
+
+/* Set the position based on WordPress admin bar on tablet resolution. */
+@media (min-width: 783px) and (max-width: 1024px) {
+	.mkhb-search-el__overlay__close {
+		right: 38px;
+	}
+}
+
+/* ============================================================================
+   SEARCH - Default values.
+   ========================================================================= */
+.mkhb-search-el .mkhb-search-el__container {
+	color: rgba(119, 119, 119, 0.4);
+}
+.mkhb-search-el .mkhb-search-el__container:hover {
+	color: rgba(119, 119, 119, 1);
+}

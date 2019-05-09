@@ -1,0 +1,367 @@
+/* Sidebar */
+.customize-control-mk-dialog > p {
+	color: #a6a6a6;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 13px;
+}
+
+.customize-control-mk-dialog .mk-dialog-button {
+	display: block;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 6px 11px;
+	height: auto;
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+	color: #555;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	background-color: #f7f7f7;
+}
+
+.customize-control-mk-dialog .mk-dialog-button:hover,
+.customize-control-mk-dialog .mk-dialog-button:hover svg,
+.customize-control-mk-dialog .mk-dialog-button:focus,
+.customize-control-mk-dialog .mk-dialog-button:focus svg {
+	color: #262b30;
+	fill: #262b30;
+}
+
+.customize-control-mk-dialog .mk-dialog-button:disabled svg {
+	fill: #cccccc;
+}
+
+.customize-control-mk-dialog .mk-dialog-button img,
+.customize-control-mk-dialog .mk-dialog-button svg {
+	vertical-align: -5px;
+	margin-right: 10px;
+}
+
+/* Dialog */
+.wp-customizer .mk-dialog *:not( .dashicons ) {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wp-customizer .mk-dialog {
+	position: relative;
+	background: #333333;
+	border: 1px solid #333333;
+	color: #fff;
+	border-radius: 5px;
+	padding: 0;
+	-webkit-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.2), 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.2), 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.2), 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
+	z-index: 888888;
+}
+
+.wp-customizer .mk-dialog .ui-widget-content {
+	font-size: 13px;
+	padding: 0;
+	border-width: 0;
+	background: #535353;
+	color: #fff;
+}
+
+.wp-customizer .mk-dialog-parent.mk-dialog-child-open {
+	z-index: 888889 !important;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.wp-customizer .mk-dialog-parent.mk-dialog-child-open:before {
+	position: absolute;
+	content: '';
+	background-color: rgba(51, 51, 51, 0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	z-index: 500001;
+}
+
+.wp-customizer .mk-dialog-parent.mk-dialog-child {
+	background-color: #535353;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-titlebar {
+	padding: 11px 20px;
+	font-weight: bold;
+	background: #333333;
+	border: 0;
+	font-size: 13px;
+	line-height: 1.4;
+	height: auto;
+	color: #fff;
+	height: 18px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-title {
+	max-width: 250px;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-titlebar .mk-reset {
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid;
+	border-radius: 3px;
+	float: right;
+	position: relative;
+	top: -5px;
+	right: 19px;
+	color: #37c4ff;
+	cursor: pointer;
+	height: 23px;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-titlebar .mk-resetting > span {
+	-webkit-animation: rotation 2s infinite linear reverse;
+	        animation: rotation 2s infinite linear reverse;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-titlebar .mk-reset > span {
+	font-size: 17px;
+	width: 16px;
+	height: 16px;
+}
+
+/*.mk-dialog-child .ui-dialog-titlebar .ui-dialog-title {
+	font-size: 18px;
+}*/
+
+.wp-customizer .mk-dialog-child .ui-dialog-titlebar {
+	padding-bottom: 25px;
+	background-color: #535353;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-titlebar:hover {
+	cursor: move;
+}
+
+.wp-customizer .mk-dialog-child .ui-dialog-titlebar .mk-reset {
+	border-width: 0;
+	color: #d9d9d9;
+	right: -5px;
+}
+
+/* Close button */
+.mk-dialog .ui-dialog-titlebar-close {
+	display: none;
+}
+
+.mk-dialog .mk-close {
+	position: relative;
+	float: right;
+	background-color: transparent;
+	border: 1px solid #37c4ff;
+	color: #37c4ff;
+	border-radius: 3px;
+	margin: -5px -14px;
+	font-size: 10px;
+	text-transform: uppercase;
+	height: 23px;
+	width: auto;
+	line-height: 1.75;
+	outline: 0;
+}
+
+.mk-dialog .mk-close .dashicons {
+	font-size: 16px;
+	line-height: 1.13;
+	margin: 0 -4px 0 -4px;
+}
+
+.mk-dialog .mk-close:hover {
+	cursor: pointer;
+}
+
+.mk-dialog-child .mk-close {
+	color: #d9d9d9;
+	border-width: 0;
+	margin: -4px -11px 0 5px;
+}
+
+/* Dialog content, tabs */
+.wp-customizer .mk-dialog .ui-dialog-content {
+	overflow-y: auto;
+	background: #535353;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 0;
+}
+
+.wp-customizer .mk-dialog .ui-dialog-content .customize-control-title {
+	font-size: 12px;
+}
+
+.wp-customizer .mk-dialog-parent .ui-dialog-content textarea,
+.wp-customizer .mk-dialog-parent .ui-dialog-content input,
+.wp-customizer .mk-dialog-parent .ui-dialog-content select {
+	font-size: 13px;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav {
+	border-bottom: 1px solid #333333;
+	background: #333333;
+	margin-top: 0;
+	border-width: 0;
+	padding: 0;
+	border-radius: 0;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav > li {
+	display: inline-block;
+	border-color: #262626;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	border-bottom: 1px solid #262626 !important;
+	padding: 0px;
+	border-radius: 0;
+	margin: 0;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav > li:focus {
+	outline-width: 0;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav a {
+	padding: 0 20px;
+	height: 38px;
+	line-height: 38px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	background-color: #424242;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav a:focus {
+	-webkit-box-shadow: 0 0 0;
+	        box-shadow: 0 0 0;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav .ui-state-active {
+	border-bottom-color: #535353 !important;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-nav .ui-state-active a {
+	background-color: #535353;
+}
+
+.wp-customizer .mk-dialog .ui-tabs .ui-tabs-panel {
+	padding: 0;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-panel .mk-style-title {
+	margin-top: 6px;
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-panel .mk-child-dialog-button {
+	background-color: #6b6b6b;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	border-color: #6b6b6b;
+	color: #fff;
+	font-size: 11px;
+	margin-bottom: 4px;
+	padding: 2px 14px;
+	height: auto;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-panel .mk-child-dialog-button span {
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.wp-customizer .mk-dialog .ui-tabs-panel .mk-child-dialog-button:hover,
+.wp-customizer .mk-dialog .ui-tabs-panel .mk-child-dialog-button:focus {
+	background-color: #757575;
+	border-color: #757575;
+	color: #fff;
+}
+
+/* Widgets Styles top button */
+.wp-customizer .mk-dialog-button.mk-widgets-styles {
+	position: absolute;
+	right: 14px;
+	bottom: 10px;
+	height: 24px;
+	line-height: 0;
+	font-size: 12px;
+}
+
+/* Rotation animation */
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+@keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+/* Button */
+.mk-button {
+	min-height: 28px;
+	height: auto;
+	margin-bottom: 4px;
+	padding: 2px 14px;
+	background-color: #6b6b6b;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	border: 1px solid #6b6b6b;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+	color: #fff;
+	font-size: 11px;
+	line-height: 22px;
+	text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.mk-button:hover,
+.mk-button:focus {
+	background-color: #757575;
+	border-color: #757575;
+	color: #fff;
+}
+
+.mk-button:focus,
+.mk-button:active {
+	outline: none;	
+}
+
+.mk-button:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+}
+
+.mk-button-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mk-element-has-text .mk-button-icon {
+	margin-right: 7px;
+}

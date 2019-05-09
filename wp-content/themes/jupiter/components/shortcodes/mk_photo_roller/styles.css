@@ -1,0 +1,114 @@
+/*
+ * Background-position and Transform techniques tested and compared.
+ *
+ * Background-position is smooth in Chrome but laggy in other browsers,
+ * It also causes performance issue.
+ *
+ * Transform is a bit laggy in Chrome but smooth in other browsers. It's a Chrome issue.
+ * No performance issue found.
+ */
+/*.mk-photo-roller,
+.mk-photo-roller-frame {
+	will-change: transform;
+	-webkit-transform: translate3d(0,0,0);
+	        transform: translate3d(0,0,0);
+}*/
+
+.mk-photo-roller {
+	width: 100%;
+	overflow: hidden; 
+	position: relative;
+}
+
+.mk-photo-roller-frame {
+	width: 100%;
+	position: relative;
+	-webkit-animation: mk-photo-roller-horizontal 30s infinite linear;
+	        animation: mk-photo-roller-horizontal 30s infinite linear;
+}
+
+.mk-photo-roller-frame.mk-vertical {
+	-webkit-animation: mk-photo-roller-vertical 30s infinite reverse linear;
+	        animation: mk-photo-roller-vertical 30s infinite reverse linear;
+}
+
+@media (max-width: 993px) {
+	.mk-photo-roller div.mk-photo-roller-frame.mk-vertical {
+		width: 100%;
+	}
+}
+
+.mk-photo-roller-frame:after {
+	content: "";
+	height: 100%;
+	width: 500%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-size: 20% 100%;
+}
+
+.mk-photo-roller-frame.mk-vertical:after {
+	height: 500%;
+	background-size: auto 20%;
+}
+
+.mk-photo-roller-frame.mk-reverse-direction {
+	animation-direction: reverse;
+}
+
+.mk-photo-roller-frame.mk-vertical.mk-reverse-direction {
+	animation-direction: normal;
+}
+
+.mk-photo-roller-frame.mk-pause-hover:hover {
+	animation-play-state: paused;
+}
+
+.mk-photo-roller-frame-img {
+	width: 100%;
+}
+
+@-webkit-keyframes mk-photo-roller-horizontal {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(-200%);
+		        transform: translateX(-200%);
+	}
+}
+
+@keyframes mk-photo-roller-horizontal {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(-200%);
+		        transform: translateX(-200%);
+	}
+}
+
+@-webkit-keyframes mk-photo-roller-vertical {
+	0% {
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(-200%);
+		        transform: translateY(-200%);
+	}
+}
+
+@keyframes mk-photo-roller-vertical {
+	0% {
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(-200%);
+		        transform: translateY(-200%);
+	}
+}

@@ -1,0 +1,148 @@
+.mka-po-wrap{
+	margin-top: 50px;
+	overflow: hidden;
+	padding: 4px;
+}
+
+/*--------------------------------------------*/
+/* Page options sidebar style
+/*--------------------------------------------*/
+.mka-po-sidebar{
+	background-color: #2e3840;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	width: 22%;
+	float: left;
+	min-height: 700px;
+	max-width: 255px;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	padding-bottom: 50px;
+}
+
+.mka-po-sidebar-list{
+	display: block;
+	list-style: none;
+	padding-top: 5px;
+}
+
+.mka-po-sidebar-list-items{
+	display: block;
+	list-style: none;
+	width: 100%;
+}
+
+a.mka-po-sidebar-tabs{
+	color: #fff;
+	text-transform: capitalize;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.mka-po-sidebar-tabs:hover{
+	background-color: #43505a;
+}
+
+.mka-po-sidebar-list-items.mka-is-active .mka-po-sidebar-tabs{
+	background-color: #2eace7;
+}
+
+/*------------------------------------------------*/
+/* Page options pane style
+/*------------------------------------------------*/
+.mka-po-pane{
+	background-color: #fff;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	width: 78%;
+    float: left;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    min-height: 700px;
+    padding-bottom: 50px;
+}
+
+.mk-po-lbl{
+	margin-bottom: 10px;
+	margin-left: 3px;
+	text-transform: capitalize;
+	display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.mka-po-pane-box-header{
+	padding: 30px 0 30px 30px;
+	border-bottom: 1px solid #dadde0;
+}
+
+.mka-po-pane-box{
+	display: none;
+}
+
+#mk-po-pane-1{
+	display: block;
+}
+
+.mka-po-pane-box-heading{
+	font-size: 22px;
+	color: #222222;
+	text-transform: capitalize;
+	margin: 0;
+	font-weight: bold;
+}
+
+.mka-po-pane-box-body{
+	padding-left: 30px;
+}
+
+.mka-po-pane-body-section{
+	width: 100%;
+	float: left;
+}
+
+.mka-po-pane-grid{
+	margin-top: 50px;
+}
+
+.mka-po-grid-half{
+    width: 48%;
+    float: left;
+    padding-right: 2%;
+}
+
+@media (max-width: 1199px){
+	.mka-po-grid-half{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px){
+	.mka-po-sidebar{
+		width: 30%;
+	}
+
+	.mka-po-pane{
+		width: 70%;
+	}
+
+	a.mka-po-sidebar-tabs{
+		margin-left: 4px;
+	}
+}
+
+@media (max-width: 499px){
+	a.mka-po-sidebar-tabs{
+		padding: 6px 14px;
+	}
+}

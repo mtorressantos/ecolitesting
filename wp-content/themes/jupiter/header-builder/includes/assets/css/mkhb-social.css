@@ -1,0 +1,25 @@
+/* ============================================================================
+   SOCIAL ICON - GENERAL
+   ========================================================================= */
+.mkhb-social-media-el .mkhb-icon-el {
+	display: inline-block;
+}
+
+.mkhb-social-media-el .mkhb-icon-el__link {
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 2px;
+	color: rgba(153, 153, 153, 1);
+	background-color: rgba(238, 238, 238, 1);
+	border-color: rgba(255, 255, 255, 1);
+}
+
+.mkhb-social-media-el .mkhb-icon-el:last-child .mkhb-icon-el__link {
+	margin-right: 0px;
+}
+
+.mkhb-social-media-el .mkhb-icon-el__link:hover {
+	background-color: rgba(153, 153, 153, 1);
+	color: rgba(238, 238, 238, 1);
+	border-color: rgba(255, 255, 255, 0);
+}

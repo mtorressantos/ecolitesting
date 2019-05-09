@@ -1,0 +1,131 @@
+/* ============================================================================
+   BURGER MENU - BUTTON
+   Version: 5.9.3
+   Deprecated: 5.9.5
+   ========================================================================= */
+.hb-burger-menu-el {
+	display: block;
+	width: auto;
+    line-height: 0;
+}
+
+.hb-burger-menu-el__container {
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+	transition: height 0.3s ease, line-height 0.3s ease;
+	-webkit-transition: height 0.3s ease, line-height 0.3s ease;
+	-moz-transition: height 0.3s ease, line-height 0.3s ease;
+	-ms-transition: height 0.3s ease, line-height 0.3s ease;
+	-o-transition: height 0.3s ease, line-height 0.3s ease;
+}
+
+.hb-burger-menu-el__container.fullscreen-active {
+    z-index: 999;
+}
+
+.hb-burger-menu-el__box {
+    cursor: pointer;
+}
+
+/* ============================================================================
+   BURGER MENU - BARS
+   ========================================================================= */
+.hb-burger-menu-el__bar {
+    position: relative;
+}
+
+.hb-burger-menu-el__sub-bar,
+.hb-burger-menu-el__bar:before,
+.hb-burger-menu-el__bar:after,
+.hb-burger-menu-el__sub-bar:before,
+.hb-burger-menu-el__sub-bar:after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hb-burger-menu-el__sub-bar {
+    left: auto;
+}
+
+.fullscreen-active .hb-burger-menu-el__sub-bar:after,
+.fullscreen-active .hb-burger-menu-el__bar:after {
+    transform: rotate(45deg);
+}
+
+.fullscreen-active .hb-burger-menu-el__sub-bar:before,
+.fullscreen-active .hb-burger-menu-el__bar:before {
+    transform: rotate(-45deg);
+}
+
+/* ============================================================================
+   BURGER MENU - ANIMATION - PRESSING
+   ========================================================================= */
+.hb-burger-menu-el__box--pressing .hb-burger-menu-el__bar:before {
+    transition: bottom 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hb-burger-menu-el__box--pressing .hb-burger-menu-el__bar:after {
+    transition: top 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fullscreen-active .hb-burger-menu-el__box--pressing .hb-burger-menu-el__bar:after {
+    transition: top 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fullscreen-active .hb-burger-menu-el__box--pressing .hb-burger-menu-el__bar:before {
+    transition: bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ============================================================================
+   BURGER MENU - ANIMATION - MORPHING
+   ========================================================================= */
+.fullscreen-active .hb-burger-menu-el__box--morphing .hb-burger-menu-el__sub-bar:after,
+.fullscreen-active .hb-burger-menu-el__box--morphing .hb-burger-menu-el__sub-bar:before,
+.hb-burger-menu-el__box--morphing .hb-burger-menu-el__sub-bar:before,
+.hb-burger-menu-el__box--morphing .hb-burger-menu-el__sub-bar:after {
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:before,
+.fullscreen-active .hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:before {
+    transition: bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    width 0.3s ease,
+    left 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:after,
+.fullscreen-active .hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:after {
+    transition: top 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    width 0.3s ease,
+    left 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:after,
+.hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:before {
+    left: 0;
+}
+
+.fullscreen-active .hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:after,
+.fullscreen-active .hb-burger-menu-el__box--morphing .hb-burger-menu-el__bar:before {
+    transform: rotate(0deg);
+    left: 50%;
+    left: 50%;
+    width: 0 !important;
+}
+
+/* ============================================================================
+   BURGER MENU - FULL SCREEN NAVIGATION
+   ========================================================================= */
+.hb-burger-menu-el__nav {
+    z-index: 998;
+}
+
+.hb-burger-menu-el__nav .menu-item a {
+    line-height: normal;
+}

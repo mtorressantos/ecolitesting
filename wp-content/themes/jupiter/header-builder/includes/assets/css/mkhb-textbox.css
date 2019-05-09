@@ -1,0 +1,25 @@
+/* ============================================================================
+   TEXTBOX
+   ========================================================================= */
+.mkhb-textbox-el {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+/* ============================================================================
+   TEXTBOX - Default values.
+   ========================================================================= */
+.mkhb-textbox-el__link {
+	color: rgba(34, 34, 34, 1);
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+.mkhb-textbox-el__link[href]:hover {
+	color: rgba(68, 68, 68, 1);
+}

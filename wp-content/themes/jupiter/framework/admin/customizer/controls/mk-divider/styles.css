@@ -1,0 +1,18 @@
+.customize-control-mk-divider {
+	padding: 5px;
+}
+
+.customize-control-mk-divider hr {
+	margin: 0 -20px;
+	border-bottom-width: 0;
+	border-top-color: #404040;
+}
+
+.mk-divider-plain .customize-control-mk-divider {
+	padding: 0;
+}
+
+.mk-divider-plain .customize-control-mk-divider hr {
+	margin: 0;
+	border: 0;
+}

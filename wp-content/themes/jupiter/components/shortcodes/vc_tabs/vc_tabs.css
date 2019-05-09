@@ -1,0 +1,216 @@
+/* Shortcode:Tabs
+-------------------------------------------------------------------- */
+#mk-tabs .vc_column_container {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#mk-tabs .wpb_tabs_nav li {
+	background-color: #fff;
+	border-bottom-color: #fff;
+	margin: 0 -1px -1px 0;
+	position: relative;
+}
+
+#mk-tabs .wpb_tabs_nav a {
+	padding: 0 20px;
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid #ebebeb;
+	height: 44px;
+	line-height: 44px;
+	color: #444;
+	white-space: nowrap;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+#mk-tabs:not(.simple-style) .wpb_tabs_nav li a:before {
+	content: '';
+	position: absolute;
+	background: #ebebeb;
+}
+
+#mk-tabs.horizental-style .wpb_tabs_nav li a:before {
+	width: 1px;
+	height: 10px;
+	left: 0;
+	bottom: 0;
+}
+
+#mk-tabs .wpb_tabs_nav a:hover .mk-svg-icon,
+#mk-tabs .wpb_tabs_nav a:focus .mk-svg-icon {
+	fill: #868686;
+}
+
+#mk-tabs .wpb_tabs_nav a .mk-svg-icon {
+	margin-right: 8px;
+	fill: #b9b9b9;
+	vertical-align: -3px;
+}
+
+#mk-tabs .wpb_tabs_nav .ui-state-active a {
+	background-color: #fff;
+	border-bottom-color: #fff;
+}
+
+#mk-tabs .wpb_tab {
+	padding: 25px 25px 20px;
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+}
+
+#mk-tabs .title-mobile {
+	display: none;
+	color: #444;
+	white-space: nowrap;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	background-color: rgba(0,0,0,.05);
+	border-bottom: 2px solid rgba(0,0,0,.1);
+	padding: 5px 10px;
+	margin-left: -25px;
+	margin-right: -25px;
+}
+
+#mk-tabs.simple-style .title-mobile {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#mk-tabs .title-mobile .mk-svg-icon {
+	margin-right: 8px;
+	vertical-align: -3px;
+}
+
+/* Simple style --------------------------- */
+#mk-tabs.simple-style .wpb_tabs_nav {
+	border-bottom: 2px solid #eee;
+}
+
+#mk-tabs.simple-style .wpb_tabs_nav a {
+	border-width: 0;
+	border-bottom-width: 2px;
+	background-color: #fff;
+	margin-bottom: -1px;
+}
+
+#mk-tabs.simple-style .wpb_tabs_nav .ui-state-active a {
+	border-bottom-color: #f97352;
+}
+
+#mk-tabs.simple-style .wpb_tab {
+	border-width: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Orientation --------------------------- */
+#mk-tabs.vertical-style .wpb_tabs_nav {
+	width: 25%;
+}
+
+#mk-tabs.vertical-style .wpb_tabs_nav li {
+	width: 100%;
+}
+
+#mk-tabs.vertical-style .wpb_tabs_nav .ui-state-active a {
+	border-bottom-color: #e5e5e5;
+}
+
+#mk-tabs.vertical-style .wpb_tabs_nav li a:before {
+	width: 10px;
+	height: 1px;
+	top: 0;
+}
+
+/* Left */
+#mk-tabs.vertical-left .wpb_tabs_nav {
+	float: left;
+}
+
+#mk-tabs.vertical-left .wpb_tab {
+	margin-left: calc( 25% - 1px );
+}
+
+#mk-tabs.vertical-left .wpb_tabs_nav .ui-state-active a {
+	border-right-color: #fff;
+}
+
+#mk-tabs.vertical-left .wpb_tabs_nav li a:before {
+	right: 0;
+}
+
+/* Right */
+#mk-tabs.vertical-right .wpb_tabs_nav {
+	float: right;
+}
+
+#mk-tabs.vertical-right .wpb_tab {
+	margin-right: calc( 25% - 1px );
+}
+
+#mk-tabs.vertical-right .wpb_tabs_nav .ui-state-active a {
+	border-left-color: #fff;
+}
+
+#mk-tabs.vertical-right .wpb_tabs_nav li a:before {
+	left: 0;
+}
+
+
+/* Responsive ----------------------------- */
+@media only screen and (max-width: 767px) {
+	#mk-tabs.simple-style .wpb_tabs_nav {
+		border-bottom-width: 0;
+	}
+	
+	#mk-tabs.mobile-false .wpb_tabs_nav li {
+		width: 100%;
+	}
+	
+	#mk-tabs.simple-style .wpb_tabs_nav a {
+		margin-bottom: 1px;
+	}
+}
+
+/* mobile-true */
+@media only screen and (max-width: 767px) {
+	#mk-tabs.mobile-true .title-mobile {
+		display: block;
+	}
+	
+	#mk-tabs.mobile-true .wpb_tabs_nav {
+		display: none;
+	}
+	
+	#mk-tabs.mobile-true .wpb_tab {
+		display: block !important;
+		border-width: 0;
+		padding-top: 0px;
+	}
+
+	#mk-tabs.mobile-true .ui-tabs-panel {
+		display: block !important;
+	}
+	
+	#mk-tabs.mobile-true.vertical-style .wpb_tab {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/* VC FEE */
+.compose-mode #mk-tabs .vc_vc_column_inner {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.compose-mode #mk-tabs .vc_vc_row_inner {
+	padding-top: 0;
+}
+
+.compose-mode .vc_vc_tabs {
+	padding-top: 0 !important;
+}

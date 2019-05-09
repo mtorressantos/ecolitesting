@@ -1,0 +1,29 @@
+.mk-element-textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.mk-element-textarea textarea {
+    width: 100%;
+    min-height: 58px;
+    padding: 5px 8px;
+    background-color: #3d3d3d;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    color: #fff;
+    resize: none;
+}
+
+.mk-element-textarea textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #37c4fc;
+}
+
+.mk-element-textarea .mk-input-group-text {
+    padding-right: 6px;
+    line-height: 1.7rem;
+    white-space: nowrap;
+}

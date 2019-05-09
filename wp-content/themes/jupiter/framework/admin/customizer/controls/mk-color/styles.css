@@ -1,0 +1,90 @@
+.mk-element-has-icon.mk-color-picker-holder .sp-replacer {
+	margin-left: 28px;
+}
+
+.customize-control-mk-color.mk-col-last .mk-color-picker-holder {
+	float: right;
+}
+
+/* Input */
+.mk-color-picker-holder .sp-replacer {
+	padding: 0;
+	border-radius: 2px;
+	border: 1px solid #363636;
+}
+
+.mk-color-picker-holder .sp-replacer.sp-active {
+	border-color: #37c4fc;
+}
+
+.mk-color-picker-holder .sp-replacer:not(.sp-active):hover,
+.mk-color-picker-holder .sp-replacer:not(.sp-active):focus {
+	border-color: #363636;
+}
+
+.mk-color-picker-holder .sp-preview {
+	margin: 0;
+	width: 27px;
+	height: 27px;
+	border-width: 0;
+}
+
+.mk-color-picker-holder .sp-dd {
+	display: none;
+}
+
+/* Popup */
+.wp-customizer .sp-container {
+	border-radius: 3px;
+	background-color: #535353;
+	border: solid 1px #333;
+	padding: 4px 4px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+}
+
+.wp-customizer .sp-picker-container {
+	border-width: 0;
+}
+
+.wp-customizer .sp-color,
+.wp-customizer .sp-hue,
+.wp-customizer .sp-clear {
+	border-color: #333;
+}
+
+.wp-customizer .sp-slider {
+	height: 6;
+	border-color: #333;
+	border-radius: 2px;
+}
+
+.wp-customizer .sp-alpha {
+	height: 10px;
+}
+
+.wp-customizer .sp-alpha-handle {
+	top: -1px;
+	bottom: -1px;
+	width: 6px;
+	border-color: #333;
+	border-radius: 2px;
+}
+
+.wp-customizer .sp-input {
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(54, 54, 54);
+	border-radius: 2px;
+	background-color: rgb(61, 61, 61);
+	color: rgb(255, 255, 255);
+	outline: 0 none;
+}
+
+.wp-customizer .sp-input-container {
+	width: 105px;
+}
+
+.wp-customizer .sp-initial span {
+	height: 23px;
+}
+

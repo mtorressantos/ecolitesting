@@ -1,0 +1,69 @@
+.mk-checkbox-item input[type="checkbox"] {
+	display:none;
+}
+.mk-checkbox-item span.mk-checkbox-hidden {
+	display:inline-block;
+	position: relative;
+	border: 1px solid #363636;
+	background: #3d3d3d;
+	height: 16px;
+	width: 16px;
+	min-width: 16px;
+	border-radius: 3px;
+	overflow: hidden;
+	vertical-align:middle;
+	margin-top: -4px;
+}
+.mk-checkbox-item :checked + span.mk-checkbox-hidden {
+	background: #37c4ff;
+	height: 16px;
+	width: 16px;
+}
+.mk-checkbox-item :checked + span.mk-checkbox-hidden:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.mk-checkbox-item :checked + span.mk-checkbox-hidden:focus {
+	border: 1px solid #363636;
+	box-shadow: none;
+}
+.mk-checkbox-item .mk-checkbox-label {
+	font-size: 12px;
+	line-height: 24px;
+}
+.mk-checkbox-button {
+}
+.mk-checkbox-image {
+}
+.mk-checkbox-image .mk-checkbox-item {
+	float: left;
+	width: calc(100% / 8 - 6px);
+	height: auto;
+	text-align: center;
+	margin-right: 6px;
+	margin-top: 5px;
+}
+.mk-checkbox-image .mk-checkbox-item:nth-child(8n) {
+	margin-right: 0px;
+}
+.mk-checkbox-image img {
+	width: 100%;
+	height: auto;
+	max-width: 25px;
+}
+.mk-checkbox-image span.mk-checkbox-hidden{
+	margin-right: 0px;
+	margin-top: 4px;
+}
+.mk-checkbox-button .mk-checkbox-item {
+	min-width: calc(100% / 3 - 6px);
+	padding: 0px;
+	float: left;
+	margin-right: 6px;
+	margin-bottom: 5px;
+}
+.mk-checkbox-button .mk-checkbox-item:nth-child(3n) {
+	margin-right: 0px;
+}

@@ -1,0 +1,102 @@
+/* ============================================================================
+   SHOP CART - GENERAL
+   ========================================================================= */
+.mkhb-shop-cart-el {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.mkhb-shop-cart-el__count {
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+
+@media (max-width: 1024px) {
+    .mkhb-shop-cart-el {
+        display: none;
+    }
+}
+@media (min-width: 1025px) {
+    .mkhb-shop-cart-el-res {
+        display: none;
+    }
+}
+
+/**
+ * SHOP CART > CART LINK
+ */
+.mkhb-shop-cart-el__link {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #222;
+    transition: all .15s ease-in-out;
+}
+
+.mkhb-shop-cart-el__link:hover {
+    color: #444;
+}
+
+.mkhb-shop-cart-el-res__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 100px;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/**
+ * SHOP CART > CART ICON
+ */
+.mkhb-shop-cart-el__link svg {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: -4px;
+    position: relative;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+.mkhb-shop-cart-el-res__link svg {
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.mkhb-shop-cart-el-res__count {
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    border-radius: 50px;
+    height: 25px;
+    min-width: 25px;
+    padding: 0;
+    line-height: 25px;
+    color: #fff;
+    background: #f97352;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ============================================================================
+   SHOP CART - BOX
+   ========================================================================= */
+.mkhb-shop-cart-el__box {
+    z-index: 999;
+}

@@ -1,0 +1,90 @@
+.Select {
+  height: 28px;
+}
+.Select:focus {
+  outline: none;
+}
+.Select .Select-input {
+  height: 28px;
+}
+.Select .Select-input > input {
+  padding: 6px 0 0;
+}
+.Select .Select-control {
+  background-color: #6B6B6B;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+  height: 28px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.Select .Select-control:hover {
+  background-color: #757575;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+.Select.is-open > .Select-control {
+  background-color: #6B6B6B;
+  color: #fff;
+}
+.Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: pointer;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #fff;
+  max-width: 130px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 11px;
+}
+.Select.Select--single > .Select-control .Select-value {
+  line-height: 28px;
+}
+.Select .Select-arrow-zone .Select-arrow,
+.Select .Select-arrow-zone:hover .Select-arrow {
+  border-color: #fff transparent transparent;
+  top: 2px;
+}
+.Select.is-open .Select-menu-outer {
+  border-radius: 1px;
+  background-color: #6B6B6B;
+  border: 1px solid #404040;
+  box-shadow: -1px 2px 5px 0 rgba(0,0,0,0.3);
+  margin-top: 0;
+  width: calc(100% + 2px);
+  font-size: 11px;
+  left: -1px;
+  z-index: 2;
+  // overflow: hidden;
+}
+.Select.is-open .Select-menu-outer .Select-menu {
+  // width: calc(100% + 17px);
+  // overflow: auto;
+}
+.Select.is-open .Select-menu-outer .Select-option {
+  background-color: #6B6B6B;
+  color: #fff;
+  padding: 8px 11px 7px;
+  line-height: 1.4;
+}
+
+.Select.Select--single .Select-option.is-focused {
+  background-color: #668896 !important;
+}
+
+.Select.Select--single .Select-option.is-selected {
+  background-color: #37C4FF !important;
+}
+
+.Select.Select--single .Select-option.is-disabled {
+  color: #939393 !important;
+}
+
+.Select .Select-loading-zone {
+  display: none;
+}

@@ -1,0 +1,10 @@
+.field-mk-textarea .CodeMirror,
+.mk-options-container .CodeMirror{
+  border: 1px solid #eee;
+  min-height: 776px;
+}
+
+.field-mk-textarea .CodeMirror-wrap,
+.mk-options-container .CodeMirror-wrap {
+  border-radius: 6px;
+}

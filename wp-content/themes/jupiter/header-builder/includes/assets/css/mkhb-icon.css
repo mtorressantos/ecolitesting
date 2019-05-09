@@ -1,0 +1,34 @@
+/* ============================================================================
+   ICON - GENERAL
+   ========================================================================= */
+.mkhb-icon-el {
+	height: auto;
+	line-height: 0;
+	text-align: left;
+	display: block;
+}
+
+.mkhb-icon-el__link {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	transition: all .15s ease-in-out;
+	width: 16px;
+	height: 16px;
+	background-color: rgba(238, 238, 238, 0);
+	color: rgba(136, 136, 136, 1);
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	border-width: 0;
+	border-color: rgba(129, 212, 250, 1);
+	border-style: solid;
+}
+
+.mkhb-icon-el__link:hover {
+	background-color: rgba(238, 238, 238, 0);
+	color: rgba(34, 34, 34, 1);
+	border-color: rgba(283, 238, 238, 0);
+}

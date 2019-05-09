@@ -1,0 +1,152 @@
+@blue: #2eabe5;
+@blue-light: #ceefff;
+
+.mk-tour {
+	background-color: @blue;
+	border-color: @blue;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px 0 rgba(0,0,0,.2), 2px 3.464px 8px 0 rgba(0,0,0,.1);
+	color: @blue-light;
+	width: 300px;
+	padding: 10px;
+	z-index: 9999999 !important;
+	
+	strong,
+	a {
+		color: #ffffff;
+	}
+
+	.btn {
+		&:hover,
+		&:focus, {
+			outline: none;
+			text-decoration: none;
+		}
+
+		&.disabled {
+			&:hover,
+			&:focus, {
+				border-color: @blue;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.arrow {
+		width: 23px;
+		height: 23px;
+		border: 2px solid @blue !important;
+		border-radius: 20px;
+		background-color: #fff;
+		color: @blue;
+
+		.dashicons {
+			font-size: 16px;
+			line-height: 22px;
+		}
+		
+		&:after {
+			display: none;
+		}
+	}
+
+	&.top {
+		.arrow {
+			transform: rotate( -90deg );
+		}
+	}
+
+	&.right {
+		.arrow {
+			left: 22px;
+		}
+	}
+
+	&.bottom {
+		.arrow {
+			transform: rotate( 90deg );
+		}
+	}
+
+	&.left {
+		.arrow {
+			transform: rotate( 180deg );
+			left: auto;
+			right: -13px;
+		}
+	}
+
+	&.mk-tour-last {
+		.mk-tour-done {
+			display: block;
+		}
+
+		.mk-tour-skip,
+		.mk-tour-next {
+			display: none;
+		}
+	}
+
+} // End of .mk-tour
+
+.mk-tour-title {
+	background-color: transparent;
+	color: #fff;
+	border-bottom: 1px solid #2c9cd0;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 14px;
+}
+
+.mk-tour-skip {
+	float: left;
+	color: @blue-light;
+	margin-top: 8px;
+
+	&:hover,
+	&:focus, {
+		outline: none;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+// Next and Done buttons.
+.mk-tour-btn {
+	background-color: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	font-weight: bold;
+	padding: 6px 27px;
+	border-color: @blue;
+	color: @blue;
+	float: right;
+	font-size: 13px;
+
+	&:hover,
+	&:focus,
+	&:focus:active {
+		background-color: #fff;
+		border-color: @blue;
+		color: @blue;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+	}
+	
+	&:focus:active {
+		box-shadow: 0 0 0 0;
+	}
+}
+
+.mk-tour-next {
+	.dashicons {
+		font-size: 11px;
+		width: 7px;
+		height: 7px;
+		line-height: 1.9em;
+		font-weight: bold;
+	}
+}
+
+.mk-tour-done {
+	display: none;
+}

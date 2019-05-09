@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="32px" xml:space="preserve">
+    <defs>
+        <symbol id="st-container">
+            <path class="st0" d="M16,3H4L3.2,0H0v1h2.4L3,3h0l2,8h9L16,3z M12.5,12c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5
+            	S13.3,12,12.5,12z M6.5,12C5.7,12,5,12.7,5,13.5S5.7,15,6.5,15S8,14.3,8,13.5S7.3,12,6.5,12z"/>
+        </symbol>
+    </defs>
+    <use xlink:href="#st-container" x="0" y="0" fill="#6d808f" />
+    <use xlink:href="#st-container" x="0" y="16" fill="#ffffff" />
+</svg>

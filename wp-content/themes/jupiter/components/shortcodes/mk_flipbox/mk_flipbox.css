@@ -1,0 +1,114 @@
+/* Shortcode:Flipbox
+-------------------------------------------------------------------- */
+.mk-flipbox {
+    position: relative;
+    -ms-perspective: 1000;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+.mk-flipbox-holder {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform: perspective(1000px);
+    transform-style: preserve-3d;
+}
+.mk-flipbox-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: table;
+    z-index: 2;
+}
+.mk-flipbox-back {
+    width: 100%;
+    height: 100%;
+    position: static;
+    left: 0;
+    top: 0;
+    display: table;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.mk-flipbox-front, .mk-flipbox-back {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+.Chrome .chrome-flipbox-backface-fix {
+    backface-visibility: visible !important;
+    -webkit-backface-visibility: visible !important;
+}
+.mk-flipbox-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+  Horizontal
+ */
+
+.flip-horizontal .mk-flipbox-back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+.flip-horizontal:hover .mk-flipbox-front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+.flip-horizontal:hover .mk-flipbox-back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+}
+
+/*
+  Vertical
+ */
+
+.flip-vertical .mk-flipbox-back {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+}
+.flip-vertical:hover .mk-flipbox-front {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+}
+.flip-vertical:hover .mk-flipbox-back {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+}
+
+/*
+  Button
+ */
+
+.mk-flipbox .mk-button-container {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/*
+  Set line-height to remove extra height from svg container div.
+*/
+
+.mk-flipbox .front-icon {
+    line-height: 1rem;
+}
+.IE .mk-flipbox {
+    overflow: hidden;
+}
+
+/*
+  IE issue fixed - JPM-1167
+*/
+
+.IE .mk-flipbox .bezier-1 {
+    transition: all .5s cubic-bezier(.645, .045, .355, 1);
+}
+.IE .mk-flipbox-front {
+    table-layout: fixed;
+}

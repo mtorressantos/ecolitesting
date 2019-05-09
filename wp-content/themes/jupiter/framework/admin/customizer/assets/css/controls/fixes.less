@@ -1,0 +1,28 @@
+// Fix devices icons misalignment.
+.devices button {
+	vertical-align: top;
+}
+
+// Fix hover cursor to default for labels.
+.ui-dialog-content {
+	overflow-x: hidden;
+
+	label {
+		cursor: default;
+	}
+	.customize-control-mk-radio,
+	.customize-control-mk-checkbox {
+		label {
+		 	cursor: pointer;
+
+			.customize-control-title {
+				cursor: default;
+			}
+		}
+	}
+}
+
+// Foe now, hide the descripitons until the tooltip is developed.
+label .customize-control-description {
+	display: none;
+}

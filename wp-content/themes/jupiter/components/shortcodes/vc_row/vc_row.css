@@ -1,0 +1,51 @@
+.vc_row {
+  position: relative;
+}
+.vc_inner.mk-grid { margin: 0 auto; }  /*increased specificity to override vc_row margins*/
+
+.vc_editor .equal-columns > .vc_element {
+	height: 100%;
+}
+
+/* Fix padding issue on full-content-width layout */
+.mk-full-content-true .vc_col-lg-12,
+.mk-full-content-true .vc_col-md-12,
+.mk-full-content-true .vc_col-sm-12,
+.mk-full-content-true .vc_col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* VC FEE - Option is disabled, video container will be hidden */
+.compose-mode .vc_row:not( .vc_video-bg-container ) .vc_video-bg {
+	display: none;
+}
+
+/* VC FEE - Fix append btn partial view */
+.compose-mode .vc_row .vc_control-btn-append {
+	top: 0;
+}
+
+/* VC FEE - Fix append btn z-index issue */
+.compose-mode .vc_controls > .vc_controls-bc {
+	z-index: 310 !important;
+}
+
+.compose-mode .vc_row.mk-fullwidth-true .vc_element:before {
+	height: 98% !important;
+}
+
+/* Fix AM-2467 - Equal columns and full width - Both in VC FEE and site frontend */
+.compose-mode .equal-columns .mk-grid > .vc_element,
+.equal-columns .mk-grid {
+	height: 100%;
+}
+
+div.vc_row.mk-fullwidth-true {
+	transition: opacity .5s ease;
+	overflow: hidden;
+}
+
+.compose-mode .vc_vc_row > [data-mk-full-width=true] {
+	padding-top: 32px;
+}

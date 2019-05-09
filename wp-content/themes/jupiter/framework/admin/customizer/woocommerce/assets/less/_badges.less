@@ -1,0 +1,56 @@
+/**
+* Override loop.
+*/
+.woocommerce, .woocommerce-page {
+
+	div.product,
+	ul.products li.product {
+
+		.onsale, 
+		.mk-out-of-stock {
+			position: absolute;
+			font-size: 13px;
+			top: 8px;
+			right: 8px;
+			padding: 12px 20px;
+			margin: 0;
+			text-transform: uppercase;
+			color: #debc51;
+			font-weight: bold;
+			background-color: transparent;
+			border: 2px solid #debc51;
+			border-radius: 0;
+			line-height: 1;
+			min-height: 0;
+			min-width: 0;
+			display: inline-block;
+			box-sizing: border-box;
+		}
+
+		.mk-out-of-stock {
+			border-color: #aaaaaa;
+			color: #aaaaaa;
+		}
+
+	} // End of ul.products
+
+	div.product {
+
+		.mk-single-product-badges {
+			text-align: right;
+			margin-bottom: 20px;
+
+			.onsale, 
+			.mk-out-of-stock {
+				position: relative;
+				line-height: 1;
+			}
+		}
+
+		.out-of-stock {
+			display: none;
+		}
+
+	} // End of div.product
+
+} // End of .woocommerce, .woocommerce-page

@@ -1,0 +1,1326 @@
+.mka-cp-wrap {
+    margin: 20px 20px 20px 0;
+    overflow: hidden;
+    padding: 4px;
+    max-width: 1200px;
+    display: block !important;
+}
+
+.mka-cp-wrap a, .mka-cp-plugin-item {
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+
+.mka-modal-textarea {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+}
+
+.mka-cp-wrap a:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mka-call-to-register-product {
+    display: none !important;
+}
+
+.mka-cp-wrap .notice, .mka-cp-wrap .error, .mka-cp-wrap .updated {
+    margin: 0 !important;
+}
+
+
+/*
+*  Control panel Header
+*/
+
+.mka-cp-header {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.mka-cp-jupiter-logo, .mka-cp-jupiter-logo span {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.mka-cp-jupiter-logo span {
+    display: block;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.mka-cp-jupiter-logo {
+    display: inline-block;
+    margin-bottom: 5px;
+    background: #fff url(../images/control-panel/jupiter-logo.svg) no-repeat center center;
+    float: left;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.mka-cp-branding strong {
+    font-size: 28px;
+    color: #222222;
+    font-weight: normal;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.mka-cp-theme-version {
+    border: 1px solid #6d808f;
+    color: #6d808f;
+    float: right;
+    border-radius: 5px;
+    padding: 6px 15px;
+    margin-top: 9px;
+    display: inline-block;
+}
+
+
+/***/
+
+.mka-cp-container {
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mka-cp-sidebar {
+    background-color: #6d808f;
+    width: 20%;
+    float: left;
+    height: 100%;
+    padding-bottom: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mka-cp-sidebar-list {
+    display: block;
+    list-style: none;
+    padding-top: 5px;
+}
+
+.mka-po-sidebar-list-items {
+    display: block;
+    list-style: none;
+    width: 100%;
+}
+
+a.mka-cp-sidebar-link {
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-left: 12px;
+    padding: 7px 15px 7px 12px;
+    border-radius: 30px;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.mka-cp-sidebar-link:hover {
+    background-color: #81929e;
+}
+
+.mka-cp-sidebar-list-items.mka-is-active .mka-cp-sidebar-link {
+    background-color: #4a5e6d;
+}
+
+.mka-cp-nav-item-icon {
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+}
+
+.mka-cp-nav-label {
+    padding-left: 10px;
+}
+
+.mka-cp-nav .mka-cp-nav-item-icon {
+    display: table-cell;
+}
+
+
+/* Icon lists */
+
+.mka-cp-nav-item-icon--support {
+    background-image: url(../images/control-panel/support.svg);
+}
+
+.mka-cp-nav-item-icon--templates {
+    background-image: url(../images/control-panel/templates.svg);
+}
+
+.mka-cp-nav-item-icon--plugins {
+    background-image: url(../images/control-panel/plugins.svg);
+}
+
+.mka-cp-nav-item-icon--addons {
+    background-image: url(../images/control-panel/addons.svg);
+}
+
+.mka-cp-nav-item-icon--image-sizes {
+    background-image: url(../images/control-panel/image-sizes.svg);
+}
+
+.mka-cp-nav-item-icon--register-product {
+    background-image: url(../images/control-panel/register-product.svg);
+}
+
+.mka-cp-nav-item-icon--system-status {
+    background-image: url(../images/control-panel/system-status.svg);
+}
+
+.mka-cp-nav-item-icon--announcements {
+    background-image: url(../images/control-panel/announcements.svg);
+}
+
+.mka-cp-nav-item-icon--updates {
+    background-image: url(../images/control-panel/updates.svg);
+}
+
+.mka-cp-nav-item-icon--export-import {
+    background-image: url(../images/control-panel/export-import.svg);
+}
+
+
+/* Panes */
+
+.mka-cp-panes {
+    background-color: #fff;
+    width: 80%;
+    float: left;
+    min-height: 700px;
+    padding-bottom: 50px;
+    position: relative;
+    margin-left: 20%;
+
+}
+.mka-cp-panes.loading-pane{
+    opacity: 0.7;
+}
+
+
+.mka-cp-pane-box {
+    padding: 35px 25px;
+}
+.mka-cp-pane-box:first-of-type {
+    display: block;
+}
+
+.mka-cp-pane-title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 35px;
+}
+
+@media handheld, only screen and (max-width: 1200px) {
+    .mka-cp-sidebar {
+        width: 60px;
+    }
+    .mka-cp-nav-label {
+        display: none;
+    }
+    .mka-cp-panes {
+        margin-left: 60px;
+        width: auto;
+    }
+}
+
+.abb-template-page-load-more {
+  display: block;
+  width: 60px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/*------------------------------------------------*/
+
+
+/* Control Panel Support Pane
+/*------------------------------------------------*/
+
+.mka-cp-support-items {
+    width: 33%;
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
+
+.mka-cp-support-link {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    text-decoration: none;
+    border-radius: 6px;
+    display: block;
+    min-height: 300px;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    margin: 7px;
+}
+
+.mka-cp-support-link:hover {
+    background: #f7f7f7;
+}
+
+.mka-cp-support-item-icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    margin: 30px auto 15px;
+}
+
+.mka-cp-support-item-title {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.mka-cp-support-item-description {
+    font-size: 14px;
+    color: #808080;
+    padding: 0 25px;
+    display: block;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+/* Icon lists */
+
+.mka-cp-support-icon-docs {
+    background-image: url(../images/control-panel/support/docs.svg);
+}
+
+.mka-cp-support-icon-video {
+    background-image: url(../images/control-panel/support/video.svg);
+}
+
+.mka-cp-support-icon-faq {
+    background-image: url(../images/control-panel/support/faq.svg);
+}
+
+.mka-cp-support-icon-helpdesk {
+    background-image: url(../images/control-panel/support/helpdesk.svg);
+}
+
+.mka-cp-support-icon-community {
+    background-image: url(../images/control-panel/support/community.svg);
+}
+
+.mka-cp-support-icon-customise {
+    background-image: url(../images/control-panel/support/customise.svg);
+}
+
+
+/*------------------------------------------------*/
+
+
+/* Control Panel Announcement Pane
+/*------------------------------------------------*/
+
+.mka-cp-announcement-item {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.mka-cp-announcement-item-link {
+    background-color: #f5f5f5;
+    color: #222;
+    display: block;
+    border-radius: 5px;
+    line-height: 24px;
+    padding: 12px 16px;
+    overflow: hidden;
+}
+
+.mka-cp-announcement-item-link:hover {
+    background-color: #ededed;
+    color: #15b2fa;
+}
+
+.mka-cp-announcement-item-icon {
+    background-image: url(../images/control-panel/announcement-page.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    height: 24px;
+    width: 24px;
+    margin: 0 12px 0 0;
+}
+
+.mka-cp-announcement-item-text {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 640px;
+}
+
+.mka-announcement-item-date {
+    font-size: 12px;
+    color: #808080;
+    display: inline-block;
+    float: right;
+}
+
+.mka-cp-older-announcements {
+    font-size: 14px;
+    font-weight: bold;
+    color: #15b2fa;
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+/*------------------------------------------------*/
+
+
+/* Control Panel Templates Page
+/*------------------------------------------------*/
+
+.mka-restore-template-wrap{
+    position: relative;
+    display: none;
+    text-align: right;
+}
+.mka-restore-template-wrap.is-active {
+    display: block;
+}
+
+.mka-restore-template-wrap .mka-button {
+    margin-bottom: 30px;
+}
+
+.mka-restore-template-info-box {
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    padding: 12px 20px;
+    min-width: 400px;
+    border-radius: 15px;
+    background-color: #fcf1e2;
+    z-index: 91;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #222222;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-style: normal;
+    text-align: center;
+}
+
+.mka-restore-template-info-arrow {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 130px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px 8px;
+    border-color: transparent transparent #fcf1e2 transparent;
+}
+
+.mka-button--restore-backup:hover .mka-restore-template-info-arrow,
+.mka-button--restore-backup:hover ~ .mka-restore-template-info-box {
+    display: block;
+}
+
+.mka-button--restore-backup:after {
+    background: url(../images/control-panel/restore-backup.svg) no-repeat center center !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.mka-cp-installed-template {
+    margin: 10px 0 50px 0;
+    display: none;
+}
+
+.mka-restore-template-wrap.is-active ~ .mka-cp-installed-template {
+    margin-top: -60px;
+}
+
+.mka-cp-install-template {
+    margin-right: -20px;
+    position: relative;
+}
+
+.mka-cp-install-template .mka-cp-pane-title {
+    padding-top: 14px;
+    margin-bottom: 35px;
+}
+
+
+/* Template Item */
+
+.mka-cp-template-item {
+    width: 33.3%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.mka-cp-template-item-inner {
+    margin: 10px 20px 10px 0;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+.mka-cp-template-item-inner:hover {
+    box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.10), 0px 5px 10px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.10), 0px 5px 10px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.10), 0px 5px 10px rgba(0, 0, 0, 0.12);
+    -webkit-transform: translate(0, -3px);
+    transform: translate(0, -3px);
+}
+
+.mka-cp-template-item-fig {
+    margin: 0 0 15px;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 4px;
+}
+
+.mka-cp-template-item-fig img {
+    width: 100%;
+    height: auto;
+}
+
+.mka-cp-template-item-name {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mka-cp-template-item-buttons {
+    padding-bottom: 15px;
+}
+
+.mka-cp-template-item-buttons.has-psd .mka-button--small{
+    padding: 10px 15px;
+}
+
+.mka-wrap .mka-button.mka-download-psd {
+    width: 30px;
+    height: 32px;
+    opacity: 0.9;
+    margin-bottom: -13px;
+    border-radius: 0 !important;
+    position: relative;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.mka-wrap .mka-button.mka-download-psd:hover {
+    opacity: 1;
+}
+
+.mka-wrap .mka-button.mka-download-psd:after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 36px;
+    left: -4px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url('../images/psd-icon.svg');
+    background-repeat: no-repeat;
+}
+
+.mka-wrap .mka-button.mka-download-psd:active {
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2)
+}
+
+.mka-cp-template-item-btn {
+    margin: 0 4px !important;
+}
+
+.mka-cp-template-search {
+    position: absolute;
+    top: 4px;
+    right: 270px;
+}
+
+.mka-cp-template-category-filter {
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    width: 240px;
+}
+
+.abb-template-page-load-more svg{
+    display: none;
+}
+.abb-template-page-load-more.is-active svg {
+    display: block;
+}
+
+@media screen and (min-width: 1281px) {
+    .mka-wrap .mka-button.mka-download-psd{
+        margin-left: 50px !important;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+    .mka-wrap .mka-button.mka-download-psd{
+        margin-left: 10px !important;
+    }
+}
+
+@media handheld, only screen and (max-width: 900px) {
+    .mka-cp-template-item {
+        width: 50%;
+    }
+    .mka-wrap .mka-button.mka-download-psd{
+        margin-left: 20px !important;
+    }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .mka-cp-template-item {
+        width: 100%;
+    }
+    .mka-wrap .mka-button.mka-download-psd{
+        margin-left: 30px !important;
+    }
+}
+
+
+/* *** */
+
+
+/*------------------------------------------------*/
+
+
+/* Control Panel Install Plugins
+/*------------------------------------------------*/
+
+.mka-cp-installed-plugins {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.mka-cp-installed-plugins:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    height: 1px;
+    background-color: #dadde0;
+}
+
+.mka-cp-plugin-item {
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mka-cp-plugin-item:hover {
+    background-color: #f1f1f1;
+}
+
+.mka-cp-plugin-item-thumb {
+    float: left;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    line-height: 4px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.mka-cp-plugin-item-meta {
+    float: left;
+    display: inline-block;
+    width: 80%;
+}
+
+.mka-cp-plugin-item-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mka-cp-plugin-update-tag {
+    font-size: 11px;
+    color: #222222;
+    background-color: #fffbe5;
+    border-radius: 3px;
+    border: 1px solid #e9e2ba;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+#js__mka-new-plugins .mka-cp-plugin-update-tag {
+    display: none;
+}
+
+.mka-cp-plugin-item-version {
+    font-weight: 300;
+    color: #666666;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+.mka-cp-plugin-item-desc {
+    font-size: 12px;
+    color: #444444;
+    font-weight: 300;
+}
+
+.mka-cp-plugin-item-actions {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    text-align: center;
+}
+.mka-cp-plugin-item-actions .mka-button {
+    float: none !important;
+}
+.mka-cp-plugin-item-actions .mka-button {
+    float: right;
+    margin-bottom: 5px;
+}
+
+
+
+/*------------------------------------------------*/
+/* Control Panel Icon Library
+/*------------------------------------------------*/
+.mk-cp-icon-library-wrap {
+    position: relative;
+    margin-right: -18px;
+}
+
+.mka-cp-icon-lib-search {
+    position: absolute;
+    top: 4px;
+    right: 270px;
+}
+
+.mka-cp-icon-lib-category-filter {
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    width: 240px;
+}
+
+
+.mk-cp-icon-library-wrap .mka-cp-pane-title {
+    padding-top: 14px;
+    margin-bottom: 35px;
+}
+
+.mka-cp-icon-item {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 8px 16px 8px 0;
+    border:1px solid #e6e6e6;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    box-sizing: border-box;
+}
+.mka-cp-icon-item:hover,
+.mka-cp-icon-item:hover .mka-cp-icon-item-class {
+ border-color:#cccccc;
+}
+
+.mka-cp-icon-item-svg {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+}
+.mka-cp-icon-item-svg svg {
+    width: 32px;
+    height: 32px;
+    fill: #444;
+}
+
+.mka-cp-icon-item-class {
+    display: block;
+    padding: 16px 5px 10px;
+    border-top:1px solid #e6e6e6;
+    text-align: center;
+    font-size: 12px;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-top:1px solid #e6e6e6;
+    resize: none;
+    outline: none;
+    box-shadow: none !important;
+}
+.mka-icon-lib-page-load-more{
+    display: block;
+    width: 60px;
+    margin: 30px auto;
+    text-align: center;
+}
+.mka-icon-lib-page-load-more svg{
+    display: none;
+}
+.mka-icon-lib-page-load-more.is-active svg {
+    display: block;
+}
+
+/*------------------------------------------------*/
+/* Control Panel System Status
+/*------------------------------------------------*/
+
+.mka-cp-system-status-table {
+    border-spacing: 0;
+    width: 100%;
+    clear: both;
+    margin: 0 0 2em 0;
+}
+
+.mka-cp-system-status-table tr:nth-child(odd) th, .mka-cp-system-status-table tr:nth-child(odd) td {
+    background: #f5f5f5;
+}
+
+.mka-cp-system-status-table tr:nth-child(2n) th, .mka-cp-system-status-table tr:nth-child(2n) td {
+    background: #ebebeb;
+}
+
+.mka-cp-system-status-table tr th {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px;
+    text-align: left;
+    background: #929292 !important;
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.mka-cp-system-status-table tr:last-child td:first-child{
+	border-bottom-left-radius: 6px;
+}
+
+.mka-cp-system-status-table tr:last-child td:last-child{
+	border-bottom-right-radius: 6px;
+}
+
+.mka-cp-system-status-table td {
+    font-size: 14px;
+}
+
+.mka-cp-system-status-table td:first-child {
+    width: 33%;
+}
+
+.mka-cp-system-status-table td.help {
+    width: 10px;
+    position: relative;
+}
+
+.mka-cp-system-status-table td {
+    padding: 12px 15px;
+}
+
+.mka-cp-system-status-table td mark {
+    background: transparent none;
+}
+
+.mka-cp-system-status-table td ul {
+    margin: 0;
+}
+
+.status-state {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.status-true {
+    background: url(../images/check-mark.svg) -11px -8px no-repeat;
+}
+
+.status-false {
+    background: url(../images/x-mark.svg) 0 0 no-repeat;
+}
+
+.status-invisible {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#mka-textarea--get-system-report {
+  display: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+}
+#mka-textarea--get-system-report textarea {
+  font-family: monospace;
+  width: 100%;
+  margin: 0;
+  height: 300px;
+  padding: 20px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  resize: none;
+  font-size: 12px;
+  line-height: 20px;
+  outline: 0;
+  margin-bottom: 15px;
+}
+
+.mka-button--get-system-report {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+
+/*------------------------------------------------*/
+/* Control Panel Register Product
+/*------------------------------------------------*/
+
+
+#mk-cp-register-product a:not(.mka-button) {
+	color: #15b2fa;
+}
+
+.mka-cp-register-steps {
+	margin-bottom: 30px;
+}
+
+.mka-fsize-14 {
+	font-size: 14px;
+}
+
+.mka-cp-register-api-label {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	margin:0 0 6px 10px;
+}
+
+.register-product-form {
+    display: none;
+}
+
+.register-product-form.is-active {
+    display: block;
+}
+
+#mka-cp-register-api-input {
+    min-width: 440px;
+}
+
+.mka-cp-api-key-text {
+	margin:0 10px;
+	display: inline-block;
+    max-width:400px;
+    line-height: 35px;
+    vertical-align: bottom;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    color: #999999;
+    font-size: 14px;
+}
+.mka-cp-api-key-text:after {
+	display: block;
+	position: absolute;
+	content: " ";
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 64%, rgba(255,255,255,0.03) 65%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 64%,rgba(255,255,255,0.03) 65%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+.mka-cp-hr {
+	margin: 35px -25px;
+	height: 1px;
+	background-color: #dadde0;
+}
+
+.mka-cp-common-issues {
+	list-style: disc;
+	list-style-position:inside;
+}
+
+.js__no-api-key-warning-icon,
+.mka-new-version-warning-icon {
+    display: none;
+    vertical-align: middle;
+    margin:1px 0 0 5px;
+}
+.js__no-api-key-warning-icon.is-active,
+.mka-new-version-warning-icon.is-active {
+    display: inline-block;
+}
+
+
+/* FTP credential Modal */
+#mk-install-template-credential {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#mk-install-template-credential fieldset label{
+    margin-right: 15px;
+}
+
+#mk-install-template-credential input{
+    height: 30px;
+    margin-top: 0;
+    width: 100%;
+}
+
+#mk-install-template-credential input[type=radio]{
+    display: inline-block !important;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+}
+
+#mk-install-template-credential #request-filesystem-credentials-desc{
+    padding: 0;
+}
+
+#mk-install-template-credential .ftp-username,
+#mk-install-template-credential .ftp-password{
+    margin-top: 10px;
+}
+
+#mk-install-template-credential #request-filesystem-credentials-desc{
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/*------------------------------------------------*/
+/* Control Panel Image Sizes
+/*------------------------------------------------*/
+
+#mk-cp-image-sizes .mka-clist-wrap {
+    width: 100%;
+}
+
+
+#mk-cp-image-sizes .mka-textfield {
+    width: 90%;
+    min-width: 100px;
+}
+
+.mka-image-size-width-option,
+.mka-image-size-height-option,
+.mka-image-size-crop-option {
+    width: 18%;
+    display: inline-block;
+}
+.mka-image-size-name-option {
+    width: 40%;
+    display: inline-block;
+}
+
+.mka-clist-item-holder {
+    float: left;
+    font-size: 14px;
+    color: #222222;
+    width: 33%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.mka-clist-item-holder.mka-highlight {
+    font-weight: bold;
+}
+.mka-clist-item-holder.mka-passive {
+    color: #999999;
+    font-size: 12px;
+}
+
+
+.mka-cp-clist-add {
+    position: absolute;
+    left: 10px;
+    bottom: -65px;
+    width: 48px;
+    height: 48px;
+    background-color: #52c8ff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.mka-cp-clist-edit {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 6px;
+}
+
+.mka-cp-clist-remove {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+}
+
+
+
+/*------------------------------------------------*/
+/* Control Panel Theme Updates
+/*------------------------------------------------*/
+.mka-cp-check-updates-wrap {
+    display: block;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: -55px;
+    border-bottom: 1px solid #dadde0;
+}
+
+.mka-cp-check-updates-wrap .mka-button {
+    float: right;
+}
+.mka-cp-last-checked {
+    float: right;
+    padding-right: 20px;
+    line-height: 35px;
+}
+
+.mka-cp-new-version-content ul ul{
+    padding-left: 20px;
+}
+
+.mka-cp-version-number {
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+}
+
+.mka-cp-version-date {
+    font-size: 12px;
+    color: #7e7e7e;
+    padding-left: 20px;
+}
+
+.mka-cp-new-version-content {
+    color: #666;
+}
+
+.mka-cp-new-version-wrap .mka-button {
+    margin:30px 15px 0 0;
+}
+
+
+
+/*------------------------------------------------*/
+/* Control Panel Addons
+/*------------------------------------------------*/
+
+.mka-cp-installed-addons {
+    margin: 10px 0 50px 0;
+    padding: 10px 0;
+}
+
+.mka-cp-install-addons {
+    margin-right: -20px;
+    position: relative;
+}
+
+.mka-cp-install-addons .mka-cp-pane-title {
+    padding-top: 14px;
+    margin-bottom: 35px;
+}
+
+
+/* Template Item */
+
+.mka-cp-addons-item {
+    width: 33.3%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.mka-cp-addons-item-inner {
+    margin: 10px 20px 10px 0;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+.mka-cp-addons-item-inner:hover {
+    box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.10), 0px 5px 10px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.10), 0px 5px 10px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.10), 0px 5px 10px rgba(0, 0, 0, 0.12);
+    -webkit-transform: translate(0, -3px);
+    transform: translate(0, -3px);
+}
+
+.mka-cp-addons-item-fig {
+    display: inline-block;
+    clear: both;
+    margin: 0 0 15px;
+    line-height: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mka-cp-addons-item-version,
+.mka-cp-addons-item-update {
+	position: absolute;
+	top:20px;
+	right:20px;
+	font-size: 11px;
+
+
+}
+.mka-cp-addons-item-update {
+	color: #fff;
+	background-color: #39bdfa;
+	display: inline-block;
+	border-radius: 15px;
+    padding: 2px 10px;
+}
+.mka-cp-addons-item-update:hover {
+	background-color: #1da3e1;
+	color: #fff;
+}
+
+.mka-cp-addons-item-version {
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
+.mka-cp-addons-item-name {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mka-cp-addons-item-detail {
+	font-size: 12px;
+	color: #808080;
+	margin-bottom: 20px;
+}
+
+.mka-cp-addons-item-more {
+	float: right;
+	font-size: 13px;
+	line-height: 33px;
+	color: #15b2fa;
+}
+.mka-cp-addons-item-more:hover {
+	text-decoration: underline;
+}
+
+.mka-cp-addons-item-btn {
+    margin: 0 4px !important;
+}
+
+
+@media handheld, only screen and (max-width: 900px) {
+    .mka-cp-addons-item {
+        width: 50%;
+    }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .mka-cp-addons-item {
+        width: 100%;
+    }
+}
+
+/*------------------------------------------------*/
+/* Control Panel Export & Import
+/*------------------------------------------------*/
+.mka-cp-export-form label,
+.mka-cp-import-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.mka-cp-import-form {
+	margin-top: 1rem;
+}
+
+.mka-cp-export-wrap .mka-cp-export-btn,
+.mka-cp-import-wrap .mka-cp-import-btn {
+	display: block;
+	margin: 1rem 0 3rem;
+}

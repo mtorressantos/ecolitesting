@@ -1,0 +1,101 @@
+/**
+ * Global styles.
+ */
+
+.woocommerce, .woocommerce-page {
+	/**
+	 * Buttons
+	 */
+	a.button,
+	button.button,
+	button.button.disabled,
+	input.button,
+	button.button,
+	#respond input#submit {
+		border-radius: 0;
+		border-style: solid;
+		background-color: #454ea2;
+		color: #fff;
+		font-size: 12px;
+		padding: 13px 30px;
+
+		&:hover {
+			background-color: lighten(#454ea2, 10%);
+			color: #fff;
+		}
+	}
+
+	.woocommerce-message .button {
+		color: #515151;
+	}
+
+}
+
+/**
+ * Import all partials.
+ */
+@import '_badges';
+@import '_loop';
+@import '_pagination';
+@import '_slick';
+
+@import '_single-product';
+@import '_single-product-2';
+@import '_single-product-3-4-7-8';
+@import '_single-product-9-10';
+
+@import '_checkout-cart.less';
+@import 'checkout-cart/_steps';
+
+.woocommerce .widget_shopping_cart .cart_list li a.remove,
+.woocommerce.widget_shopping_cart .cart_list li a.remove {
+	position: static;
+	float: left;
+	left: auto;
+	top: auto;
+	margin-top: 32px;
+	font-size: 18px;
+	color: #b1b1b1 !important;
+}
+.woocommerce ul.cart_list li img,
+.woocommerce ul.product_list_widget li img {
+	float: left;
+}
+.woocommerce ul.cart_list li img,
+.woocommerce ul.product_list_widget li img {
+	width: 70px;
+	margin-right: 10px;
+}
+
+.woocommerce.widget {
+	.star-rating {
+		&::before {
+			color: #ffc400;
+		}
+		span {
+			&::before {
+				color: #ffc400;
+			}
+		}
+	}
+}
+
+.woocommerce-mini-cart__empty-message {
+    margin: 20px 10px;
+}
+
+/**
+ * In WooCommerce Shop page, all WordPress content will be rendered in WooCommerce
+ * Products Header section and VC Row pull the content to left because the margin
+ * left and right is -15px. Problem only happen in Row element and the Full Width
+ * option is disabled.
+ * .woocommerce-page > .woocommerce-products-header > .mk-fullwidth-false.vc_row
+ */
+.woocommerce-page {
+	.woocommerce-products-header {
+		.mk-fullwidth-false.vc_row {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

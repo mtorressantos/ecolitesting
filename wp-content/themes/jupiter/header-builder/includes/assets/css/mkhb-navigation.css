@@ -1,0 +1,758 @@
+/* ============================================================================
+   HB Nav Container
+   ========================================================================= */
+.mkhb-nav-container {
+	z-index: 30;
+	display: block;
+	position: relative;
+	margin: 0;
+	width: auto;
+	background: transparent;
+	line-height: 0;
+}
+.mkhb-nav-container::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* ============================================================================
+   HB Navigation
+   ========================================================================= */
+.mkhb-navigation {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
+.mkhb-navigation ul:before {
+	display: none!important;
+}
+.mkhb-navigation ul:before {
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	display: inline;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	vertical-align: middle;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	margin-top: 0;
+}
+.mkhb-navigation li.hb-no-mega-menu ul.sub-menu,
+.mkhb-navigation li.mkhb-has-mega-menu > ul.sub-menu {
+	background-color: #fff;
+}
+.mkhb-navigation ul.sub-menu a.menu-item-link {
+	color: #555555;
+}
+.mkhb-navigation ul.sub-menu .mkhb-menu-sub-level-arrow svg {
+	fill: #555555;
+}
+
+.mkhb-navigation ul.sub-menu a.menu-item-link:hover,
+.mkhb-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link,
+.mkhb-navigation-ul ul.sub-menu li.current-menu-parent > a.menu-item-link {
+	color: #444444;
+}
+
+/* ============================================================================
+   HB Navigation - Mobile
+   ========================================================================= */
+.mkhb-navigation-resp__menu {
+	width: 18px;
+	height: 18px;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.mkhb-navigation-resp__menu > div {
+	height: 3px;
+	margin-bottom: 3px;
+	border-radius: 3px;
+	display: block;
+	position: relative;
+}
+
+/* ============================================================================
+   HB Navigation Dropdown
+   ========================================================================= */
+.dropdownJavascript li.dropdownOpen>ul.sub-menu,
+.mkhb-navigation-ul:not(.dropdownJavascript) li.menu-item:hover>ul.sub-menu,
+.mkhb-navigation-ul>li.menu-item ul.sub-menu:after {
+	z-index: 10;
+}
+.dropdownJavascript li.mkhb-has-mega-menu:hover>ul.sub-menu,
+.dropdownJavascript li.hb-no-mega-menu:hover>ul.sub-menu {
+	display: none;
+}
+.dropdownJavascript li.dropdownOpen>ul.sub-menu {
+	display: block;
+}
+
+/* ============================================================================
+   HB Navigation UL
+   ========================================================================= */
+.Edge .mkhb-navigation-ul li>.sub-menu,
+.IE .mkhb-navigation-ul li>.sub-menu {
+	top: -10000px!important;
+	display: block;
+}
+.Edge .mkhb-navigation-ul>li:hover>.sub-menu,
+.IE .mkhb-navigation-ul>li:hover>.sub-menu {
+	top: 100%!important;
+	display: block;
+}
+.Edge .mkhb-navigation-ul .sub-menu li:hover>.sub-menu,
+.IE .mkhb-navigation-ul .sub-menu li:hover>.sub-menu {
+	top:0!important;
+	display:block;
+}
+
+
+.mkhb-navigation-ul,
+.mkhb-navigation-ul li.menu-item,
+.mkhb-navigation-ul ul.sub-menu {
+	margin: 0;
+	padding: 0;
+}
+.mkhb-navigation-ul li.hb-no-mega-menu ul.sub-menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	/*padding: 8px 0;*/
+}
+.mkhb-navigation-ul li.hb-no-mega-menu>ul.sub-menu {
+	right: auto;
+	left: 0;
+}
+.mkhb-navigation-ul:not(.dropdownJavascript) li.menu-item:hover>ul.sub-menu {
+	display: block;
+}
+.mkhb-navigation-ul li>.sub-menu {
+	display: none;
+}
+.mkhb-navigation-ul li.mkhb-has-mega-menu>ul.sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 17px 0;
+}
+.mkhb-navigation-ul>li.menu-item {
+	float: left;
+}
+.mkhb-navigation-ul>li.menu-item>a.menu-item-link {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 13px;
+	position: relative;
+	box-sizing: border-box;
+	line-height: normal;
+}
+.mkhb-navigation-ul>li.menu-item .sub-menu a.menu-item-link {
+	transition: all .2s ease-in-out;
+}
+.mkhb-navigation-ul>li.hb-no-mega-menu ul.sub-menu li.menu-item {
+	line-height: 1;
+}
+.mkhb-navigation-ul>li.hb-no-mega-menu ul.sub-menu li.menu-item a.menu-item-link {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	line-height: 1;
+	text-align: left;
+	float: none;
+	margin: 0;
+	padding: 19px 28px 18px 28px;
+	text-transform: capitalize;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.mkhb-navigation-ul li.hb-no-mega-menu ul.sub-menu ul.sub-menu {
+	top: 0;
+	left: 100%;
+	right: auto;
+}
+.mkhb-navigation-ul li .dropdownRightToLeft>ul.sub-menu {
+	left: auto !important;
+	right: 100% !important;
+}
+.mkhb-navigation-ul li.menu-item {
+	position: relative;
+	display: block;
+	list-style-type: none;
+}
+.mkhb-navigation-ul>li.menu-item {
+	display: inline-block;
+}
+.mkhb-navigation-ul a.menu-item-link,
+.mkhb-navigation-ul span {
+	display: block;
+	text-decoration: none;
+}
+.mkhb-navigation-ul .menu-item-language span {
+	display: inline;
+}
+.dropdownJavascript li.mkhb-has-mega-menu:hover>ul.sub-menu,
+.dropdownJavascript li.hb-no-mega-menu:hover>ul.sub-menu {
+	display: none;
+}
+.dropdownJavascript li.dropdownOpen>ul.sub-menu {
+	display: block !important;
+}
+.mkhb-navigation-ul li.with-menu .mkhb-menu-sub-level-arrow {
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	margin-top: -8px;
+	height: 100%;
+}
+.mkhb-navigation-ul li.menu-item.mkhb-has-mega-menu {
+	position: static;
+}
+.mkhb-navigation-ul li.with-menu>a:before {
+	display: none !important;
+}
+.mkhb-navigation-ul li.with-menu>a:before {
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	display: inline;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	vertical-align: middle;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	margin-top: 0;
+}
+.mkhb-navigation-ul > li.menu-item > a.menu-item-link {
+	color: #222222;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px 20px;
+	letter-spacing: 0px;
+}
+.mkhb-navigation-ul>li.menu-item a.menu-item-link svg {
+	margin-right: 8px;
+	height: 16px;
+	vertical-align: middle;
+}
+.mkhb-navigation-ul .mkhb-menu-sub-level-arrow svg {
+	height: 12px;
+	vertical-align: middle;
+	position: absolute;
+}
+
+/* ============================================================================
+   HB Navigation - Mobile Dropdown
+   ========================================================================= */
+.mkhb-navigation-resp__wrap {
+	position: relative;
+	width: 100%;
+	display: none;
+	z-index: 20;
+	height: 100%;
+}
+
+.mkhb-navigation-resp__ul {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 20;
+}
+
+.mkhb-navigation-resp__ul li {
+	display: block;
+	margin: 0;
+	position: relative;
+}
+
+.mkhb-navigation-resp__ul li a {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	display: block;
+	padding: 15px 20px;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 1;
+}
+
+.mkhb-navigation-resp__ul li ul {
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+.mkhb-navigation-resp__ul > li > a,
+.mkhb-navigation-resp__ul > li > ul li a {
+	margin: 0;
+}
+
+/**
+ * NAVIGATION RESP > MENU ITEM
+ */
+.mkhb-navigation-resp__ul > li {
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.mkhb-navigation-resp__ul > li:first-child {
+	border-top: 1px solid rgba(128, 128, 128, 0.2) !important;
+	margin-top: 0px !important;
+}
+.mkhb-navigation-resp__ul > li:last-child {
+	margin-bottom: 0px !important;
+}
+
+/**
+ * NAVIGATION RESP > MENU ITEM > SUB MENU
+ */
+.mkhb-navigation-resp__arrow {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	text-align: center;
+	cursor: pointer;
+	filter: alpha(opacity=@opacity * 100);
+	-moz-opacity: 70;
+	-khtml-opacity: 70;
+	opacity: 70;
+	opacity: 0.7;
+	width: 70px;
+	height: 100%;
+	line-height: 47px;
+}
+
+.rtl .mkhb-navigation-resp__arrow {
+	right: auto;
+	left: 0;
+}
+
+.mkhb-navigation-resp__arrow svg {
+	height: 16px;
+}
+
+.mkhb-navigation-resp__ul > li > ul {
+	display: none;
+	border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.mkhb-navigation-resp__ul li ul li a {
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0;
+	padding: 12px 15px 12px 15px;
+	text-align: left;
+	text-transform: none;
+	font-weight: normal;
+}
+
+/* ============================================================================
+   HB Navigation - Search Form
+   ========================================================================= */
+.mkhb-navigation-resp__searchform {
+	margin: 10px;
+	position: relative;
+	line-height: 24px;
+}
+
+.mkhb-navigation-resp__searchform .text-input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.02);
+	box-shadow: none !important;
+	border-radius: 0;
+	color: #9e9e9e !important;
+	font-size: 13px;
+	outline: none;
+	margin-bottom: 4px;
+}
+
+.mkhb-navigation-resp__searchform i {
+	position: absolute;
+	right: 15px;
+	bottom: 14px;
+}
+
+.mkhb-navigation-resp__searchform i input {
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.mkhb-navigation-resp__searchform i svg {
+	fill: #cccccc;
+	fill: rgba(0, 0, 0, 0.3);
+	height: 20px;
+	width: 19px;
+	vertical-align: middle;
+}
+
+/* ============================================================================
+   HB Mega Menu
+   ========================================================================= */
+.mkhb-has-mega-menu>ul.sub-menu {
+	width:100%;
+	position:absolute;
+	left:0;
+	padding:20px 0;
+}
+.mkhb-has-mega-menu>ul.sub-menu>ul.sub-menu {
+	z-index: auto;
+	position:relative;
+	display:block;
+	top:auto;
+	left:auto;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.menu-item {
+	display:block;
+	left:0;
+	position:relative;
+	float:left;
+	width:23%;
+	border:0;
+	background-color:transparent;
+	box-shadow:none;
+	padding-left:10px;
+}
+.mkhb-has-mega-menu .mkhb-megamenu-title {
+	text-align:left;
+	font-size:14px;
+	line-height:14px;
+	font-weight:700;
+	padding:9px 10px 16px;
+	margin:0 0 6px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+.mkhb-has-mega-menu .mkhb-megamenu-title:after {
+	content: '';
+	display: block;
+	margin-top: 10px;
+	width: 20px;
+	height: 2px;
+	opacity: .3;
+	background-color: #fff;
+}
+.mkhb-has-mega-menu .mkhb-megamenu-title svg {
+	margin-right: 8px;
+	height: 16px;
+	vertical-align: middle;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.menu-item {
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.menu-item:first-child {
+	border-left: none;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.hb_mega_col_1 {
+	width: 100%;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.hb_mega_col_2 {
+	width: 49.5%;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.hb_mega_col_3 {
+	width: 33.25%;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.hb_mega_col_4 {
+	width: 24.9%;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.hb_mega_col_5 {
+	width: 19.8%;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li.hb_mega_col_6 {
+	width: 16.5%;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li>ul.sub-menu {
+	display: block;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li>ul.sub-menu li.menu-item {
+	line-height: 1;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li>ul.sub-menu li.menu-item a.menu-item-link {
+	display: block;
+	position: relative;
+	text-align: left;
+	float: none;
+	margin: 0;
+	padding: 10px;
+	line-height: 18px;
+}
+.mkhb-has-mega-menu>ul.sub-menu>li>ul.sub-menu li.menu-item a.menu-item-link svg {
+	margin-right: 8px;
+	height: 16px;
+	vertical-align: middle;
+}
+.mkhb-megamenu-widgets-container {
+	text-align:left;
+	padding:10px;
+	line-height:22px;
+}
+.mkhb-megamenu-widgets-container ul {
+	list-style:none;
+	margin:0;
+}
+.mkhb-megamenu-widgets-container .widget {
+	margin-bottom:15px;
+	overflow:visible;
+}
+
+/* ============================================================================
+   Hover Style 1
+   ========================================================================= */
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul>li.menu-item:before {
+	content: "";
+	display: block;
+	height: 3px;
+	background: transparent;
+}
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.menu-item > a.menu-item-link:hover,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.menu-item:hover > a.menu-item-link,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.current-menu-item > a.menu-item-link,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.current-menu-ancestor > a.menu-item-link {
+	color: #EE8282;
+}
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.dropdownOpen:before,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.active:before,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.open:before,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.menu-item:hover:before,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.current-menu-item:before,
+.mkhb-menu-hover-style-1 .mkhb-navigation-ul > li.current-menu-ancestor:before {
+	background: #EE8282;
+}
+
+/* ============================================================================
+   Hover Style 2
+   ========================================================================= */
+.mkhb-menu-hover-style-2 .mkhb-navigation-ul > li.menu-item > a.menu-item-link:hover,
+.mkhb-menu-hover-style-2 .mkhb-navigation-ul > li.menu-item:hover > a.menu-item-link,
+.mkhb-menu-hover-style-2 .mkhb-navigation-ul > li.current-menu-item > a.menu-item-link,
+.mkhb-menu-hover-style-2 .mkhb-navigation-ul > li.current-menu-ancestor > a.menu-item-link {
+	color: #EE8282;
+}
+
+/* ============================================================================
+   Hover Style 3
+   ========================================================================= */
+.mkhb-menu-hover-style-3 .mkhb-navigation-ul>li.menu-item>a {
+	border-radius: 6px;
+	margin: 0;
+	border: 2px solid transparent;
+}
+.mkhb-menu-hover-style-3 .mkhb-navigation-ul > li.menu-item > a.menu-item-link:hover,
+.mkhb-menu-hover-style-3 .mkhb-navigation-ul > li.menu-item:hover > a.menu-item-link,
+.mkhb-menu-hover-style-3 .mkhb-navigation-ul > li.menu-item:hover > a.menu-item-link {
+	border:2px solid #EE8282;
+}
+.mkhb-menu-hover-style-3 .mkhb-navigation-ul > li.current-menu-item > a.menu-item-link,
+.mkhb-menu-hover-style-3 .mkhb-navigation-ul > li.current-menu-ancestor > a.menu-item-link {
+	border:2px solid #EE8282;
+	color: #fff;
+}
+
+/* ============================================================================
+   Hover Style 4
+   ========================================================================= */
+.mkhb-menu-hover-style-4 .mkhb-navigation-ul>li.menu-item>a.menu-item-link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+	-webkit-transform-origin: left center;
+	transition: all .15s ease-out;
+	filter: alpha(opacity=@opacity * 100);
+	-moz-opacity: 100;
+	-khtml-opacity: 100;
+	opacity: 1;
+	background-color: #EE8282;
+	color: #fff;
+}
+.mkhb-menu-hover-style-4 .mkhb-navigation-ul>li.current-menu-ancestor>a.menu-item-link:after,
+.mkhb-menu-hover-style-4 .mkhb-navigation-ul>li.current-menu-item>a.menu-item-link:after,
+.mkhb-menu-hover-style-4 .mkhb-navigation-ul>li.menu-item:hover>a.menu-item-link::after {
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	filter: alpha(opacity=@opacity * 100);
+	-moz-opacity: 100;
+	-khtml-opacity: 100;
+	opacity: 100;
+	opacity:1;
+}
+
+/* ============================================================================
+   Sample / Demo to override style - Will be removed later
+   ========================================================================= */
+.mkhb-navigation-ul > li.hb-no-mega-menu ul.sub-menu li.menu-item a.menu-item-link  {
+	min-width: 230px;
+	max-width: 100%;
+}
+.mkhb-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link,
+.mkhb-navigation-ul ul.sub-menu li.current-menu-parent > a.menu-item-link {
+	color: #fff !important;
+}
+.mkhb-navigation-ul li.menu-item ul.sub-menu li.menu-item a.menu-item-link {
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+/* ============================================================================
+   BURGER MENU - BUTTON
+   ========================================================================= */
+.mkhb-navigation-resp {
+	display: block;
+	width: auto;
+	line-height: 0;
+}
+.mkhb-navigation-resp__container {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	transition: height 0.3s ease, line-height 0.3s ease;
+	-webkit-transition: height 0.3s ease, line-height 0.3s ease;
+	-moz-transition: height 0.3s ease, line-height 0.3s ease;
+	-ms-transition: height 0.3s ease, line-height 0.3s ease;
+	-o-transition: height 0.3s ease, line-height 0.3s ease;
+}
+.mkhb-navigation-resp__container--burger-desktop.fullscreen-active {
+	z-index: 999;
+}
+.mkhb-navigation-resp__box {
+	padding: 10px 20px 10px 20px;
+	background: #222222;
+	cursor: pointer;
+}
+.mkhb-navigation-resp__box:hover {
+	background: #dddddd;
+}
+
+/* ============================================================================
+   BURGER MENU - BARS
+   ========================================================================= */
+.mkhb-navigation-resp__bar {
+	position: relative;
+}
+.mkhb-navigation-resp__sub-bar:before,
+.mkhb-navigation-resp__sub-bar:after,
+.mkhb-navigation-resp__bar,
+.mkhb-navigation-resp__bar:before,
+.mkhb-navigation-resp__bar:after {
+	background: #ffffff;
+}
+.mkhb-navigation-resp__box:hover .mkhb-navigation-resp__sub-bar:before,
+.mkhb-navigation-resp__box:hover .mkhb-navigation-resp__sub-bar:after,
+.mkhb-navigation-resp__box:hover .mkhb-navigation-resp__bar,
+.mkhb-navigation-resp__box:hover .mkhb-navigation-resp__bar:before,
+.mkhb-navigation-resp__box:hover .mkhb-navigation-resp__bar:after {
+	background: #666666;
+}
+.mkhb-navigation-resp__sub-bar,
+.mkhb-navigation-resp__bar:before,
+.mkhb-navigation-resp__bar:after,
+.mkhb-navigation-resp__sub-bar:before,
+.mkhb-navigation-resp__sub-bar:after {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+.mkhb-navigation-resp__sub-bar {
+	left: auto;
+}
+.fullscreen-active .mkhb-navigation-resp__sub-bar:after,
+.fullscreen-active .mkhb-navigation-resp__bar:after {
+	transform: rotate(45deg);
+}
+.fullscreen-active .mkhb-navigation-resp__sub-bar:before,
+.fullscreen-active .mkhb-navigation-resp__bar:before {
+	transform: rotate(-45deg);
+}
+
+/* ============================================================================
+   BURGER MENU - ANIMATION - PRESSING
+   ========================================================================= */
+.mkhb-navigation-resp__box--pressing .mkhb-navigation-resp__bar:before {
+	transition: bottom 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+	transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mkhb-navigation-resp__box--pressing .mkhb-navigation-resp__bar:after {
+	transition: top 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+	transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fullscreen-active .mkhb-navigation-resp__box--pressing .mkhb-navigation-resp__bar:after {
+	transition: top 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+	transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fullscreen-active .mkhb-navigation-resp__box--pressing .mkhb-navigation-resp__bar:before {
+	transition: bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+	transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ============================================================================
+   BURGER MENU - ANIMATION - MORPHING
+   ========================================================================= */
+.fullscreen-active .mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__sub-bar:after,
+.fullscreen-active .mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__sub-bar:before,
+.mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__sub-bar:before,
+.mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__sub-bar:after {
+	transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:before,
+.fullscreen-active .mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:before,
+.mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:after,
+.fullscreen-active .mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:after {
+	transition:
+		transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+		left 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+		width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:after,
+.mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:before {
+	left: 0;
+}
+
+.fullscreen-active .mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:after,
+.fullscreen-active .mkhb-navigation-resp__box--morphing .mkhb-navigation-resp__bar:before {
+	transform: rotate(0deg);
+	left: 50%;
+	width: 0 !important;
+}
+
+/* ============================================================================
+   BURGER MENU - FULL SCREEN NAVIGATION
+   ========================================================================= */
+.mkhb-navigation-resp__nav {
+	z-index: 998;
+}
+
+.mkhb-navigation-resp__nav .menu-item a {
+	line-height: normal;
+}
+
+.mkhb-container .mkhb-navigation-resp__nav img,
+.mkhb-container-fluid .mkhb-navigation-resp__nav img {
+	display: inline;
+}

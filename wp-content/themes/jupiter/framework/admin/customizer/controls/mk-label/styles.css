@@ -1,0 +1,56 @@
+.customize-control-mk-label {
+	margin-bottom: 0;
+}
+.mk-input-group-icon + .customize-control-title{
+	display: inline-block;
+}
+.mk-fancy-label {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.mk-fancy-label .customize-control-title {
+	position: relative;
+	display: inline-block;
+	background: #535353; 
+	color: #FFFFFF;
+	padding: 0px 15px;
+	border: 1px solid #FFFFFF;
+	border-radius: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	z-index: 2;
+}
+.mk-fancy-label:before {
+	border-top: 1px solid #FFFFFF;
+	content: "";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	width: 409px;
+	z-index: 1;
+}
+.mk-fancy-label.mk-green:before,
+.mk-fancy-label.mk-green .customize-control-title {
+	border-color: #509384;
+	color: #509384;
+}
+.mk-fancy-label.mk-yellow:before,
+.mk-fancy-label.mk-yellow .customize-control-title {
+	border-color: #c2b86d;
+	color: #c2b86d;
+}
+.mk-fancy-label.mk-red:before,
+.mk-fancy-label.mk-red .customize-control-title {
+	border-color: #880000;
+	color: #880000;
+}
+.mk-fancy-label.mk-blue:before,
+.mk-fancy-label.mk-blue .customize-control-title {
+	border-color: #000088;
+	color: #000088;
+}
+

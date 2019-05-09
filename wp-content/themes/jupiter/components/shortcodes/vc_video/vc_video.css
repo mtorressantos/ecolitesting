@@ -1,0 +1,126 @@
+/* Shortcode:Video Player
+-------------------------------------------------------------------- */
+.video-container {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+.video-container iframe,
+.video-container object,
+.video-container video,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-container .video-thumbnail {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #cccccc;
+}
+.video-container .video-thumbnail-overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.video-container .mk-svg-icon {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: all 200ms ease-in-out;
+}
+.video-container .mk-svg-icon:hover {
+	cursor: pointer;
+}
+.video-container .fade-in .mk-svg-icon {
+	opacity: 0.5;
+}
+.video-container .fade-in .mk-svg-icon:hover {
+	opacity: 1;
+}
+.video-container .scale-up .mk-svg-icon {
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+}
+.video-container .scale-up .mk-svg-icon:hover {
+	-webkit-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+.video-container .preloader-preview-area{
+	margin-top: -90px;
+}
+.fancybox-video {
+	position: absolute;
+	z-index: 1001;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.fancybox-video iframe,
+.fancybox-video object,
+.fancybox-video video,
+.fancybox-video embed {
+	width: 100%;
+	height: 100%;
+}
+.fancybox-video-close {
+	top: 0 !important;
+	right: -40px !important;
+	background-color: rgba(0,0,0,0) !important;
+}
+.fancybox-video-close:hover {
+	opacity: 1;
+}
+.fancybox-video-close:before,
+.fancybox-video-close:after {
+	position: absolute;
+	left: 14px;
+	content: ' ';
+	height: 31px;
+	width: 2px;
+	background-color: #fff;
+}
+.fancybox-video-close:before {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.fancybox-video-close:after {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+.video-container.mk-aspect-ratio {
+	padding-bottom: 0;
+	height: 100%;
+}
+.video-container.mk-aspect-ratio > .video-player {
+	position: relative;
+}
+.video-container.mk-aspect-ratio video {
+	position: relative;
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}

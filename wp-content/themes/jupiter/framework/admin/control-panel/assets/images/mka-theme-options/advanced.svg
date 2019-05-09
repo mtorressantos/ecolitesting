@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="32px" xml:space="preserve">
+    <defs>
+        <symbol id="st-container">
+            <polygon class="st0" points="13,6 7.1,6 8.6,0 0,10 5.8,10 4.4,16 "/>
+        </symbol>
+    </defs>
+    <use xlink:href="#st-container" x="0" y="0" fill="#6d808f" />
+    <use xlink:href="#st-container" x="0" y="16" fill="#ffffff" />
+</svg>

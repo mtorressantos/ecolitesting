@@ -1,0 +1,7 @@
+.react-numeric-input-component:hover {
+  background: #383838 !important;
+}
+
+.react-numeric-input-component:hover input {
+  background: #383838 !important;
+}

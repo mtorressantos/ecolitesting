@@ -1,0 +1,17 @@
+/* Beta badge */
+.mk-beta-badge {
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 8px;
+	margin-left: 4px;
+	color: #b4a44e;
+	line-height: 9px;
+}
+
+#LayerSlider-update.plugin-update-tr,
+#js_composer-update.plugin-update-tr,
+#masterslider-update.plugin-update-tr,
+#revslider-update.plugin-update-tr,
+.ls-plugin-update-row {
+	display:none !important;
+}
